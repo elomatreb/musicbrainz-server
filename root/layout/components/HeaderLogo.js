@@ -14,7 +14,6 @@ component HeaderLogo() {
   return (
     <img
       alt="MusicBrainz"
-      className="logo"
       src={headerLogoSvgUrl}
     />
   );

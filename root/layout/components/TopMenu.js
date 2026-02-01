@@ -192,7 +192,7 @@ component AdminMenu(user: UnsanitizedEditorT) {
 component UserMenu() {
   const $c = React.useContext(CatalystContext);
   return (
-    <ul className="menu" tabIndex={-1}>
+    <ul className="menu user-menu" tabIndex={-1}>
       {$c.user ? (
         <>
           <AccountMenu user={$c.user} />
@@ -217,14 +217,7 @@ component UserMenu() {
 
 component TopMenu() {
   return (
-    <div className="top">
-      <div className="links-container">
-        <UserMenu />
-      </div>
-      <div className="search-container">
-        <Search />
-      </div>
-    </div>
+    <UserMenu />
   );
 }
 
